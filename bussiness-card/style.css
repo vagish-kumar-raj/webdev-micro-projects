@@ -1,0 +1,29 @@
+body{
+    background-color: #004d0d;
+    margin: 10%;
+}
+
+#profile{
+    width: 200px;
+    height: fit-content;
+    margin-bottom: 50px;    
+    border: solid 2px #bc6c25;
+    padding-top: 10px;
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+
+
+
+#main{
+    color: #fefae0;
+    display: flex;
+    justify-content: start;
+    background-color: #bc6c25;
+    padding: 3%;
+    border: #ffb703 solid 3px;
+    border-radius: 20px;
+    border-bottom: #606c38  solid 10px;
+    width: 600px;
+    margin: auto;
+}
