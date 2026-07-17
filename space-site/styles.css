@@ -1,0 +1,113 @@
+body {
+    background-image: url('../img/stars.webp');
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1%;
+}
+
+
+#btn {
+    background-color: #FFEEAA;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 10px 20px;
+    border: 2px solid #FFEEAA;
+    border-top: 2px solid #FCC801;
+    border-left: 5px solid #FCC801;
+    border-radius: 10px;
+    text-shadow: 2px 2px 1px #FF7F2A;
+}
+
+#btn:hover {
+    background-color: #FFEEAA;
+    color: black;
+    filter: invert(100%); 
+}
+#a:hover {
+    background-color: #FFEEAA;
+    color: black;
+    filter: invert(100%); 
+}
+
+h1{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-top: 2px solid #FCC801;
+    border-left: 5px solid #FCC801;
+    border-radius: 10px;
+    background: #000000;
+    color: #FCC801;
+    text-shadow: 2px 2px 4px #FF7F2A;
+}
+
+header{
+    text-align: center;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+}
+
+#planet-striker {
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+}
+a {
+    color: #FF7F2A;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px #FCC801;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    text-align: justify;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    padding: 1%;
+    width: 100%;
+}
+
+div {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #FFEEAA;
+    border-radius: 10px;
+    background-color: #000000;
+    width: 32%
+}

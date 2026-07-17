@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Striker - Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Join the exploration</h1>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullName">Explorer Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Comms Link (Email)</label>
+                <input type="email" id="email" name="email" placeholder="transmission@earth.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Earth Age</label>
+                <input type="number" id="age" name="age" min="18" max="120" placeholder="18+" required>
+            </div>
+
+            <div class="form-group">
+                <label>Select Your Mission Target</label>
+                <div class="mission-options">
+                    <label class="radio-label">
+                        <input type="radio" name="mission" value="ISS" required> ISS
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="mission" value="Moon"> Lunar Base
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="mission" value="Mars"> Mars Colony
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Special Skills & Qualifications</label>
+                <textarea id="skills" name="skills" rows="4" placeholder="e.g. Zero-G botany, astro-navigation, expert rock-paper-scissors player..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Apply!</button>
+        </form>
+    </div>
+
+</body>
+</html>

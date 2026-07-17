@@ -1,0 +1,23 @@
+body {
+    background-color: #000000;
+    text-align: justify;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 5%;
+}
+
+h1{
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: 2px solid #FFEEAA;
+    border-top: 2px solid #FCC801;
+    border-left: 5px solid #FCC801;
+    border-radius: 10px;
+    background: #000000;
+    color: #FCC801;
+    text-shadow: 2px 2px 4px #FF7F2A;
+    text-align: center;
+}
