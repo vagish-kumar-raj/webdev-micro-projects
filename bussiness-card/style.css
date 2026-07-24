@@ -1,29 +1,42 @@
 body{
-    background-color: #004d0d;
-    margin: 10%;
+    background-color: #ffff00;
+    margin: 20px;
 }
 
-#profile{
-    width: 200px;
-    height: fit-content;
-    margin-bottom: 50px;    
-    border: solid 2px #bc6c25;
-    padding-top: 10px;
-    background-color: #ffffff;
-    margin-right: 10px;
+#photo{
+    width: 160px;
+    aspect-ratio: 1/1;
+    margin: 20px;    
+    border: solid 3px #fefae0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px #fefae0;
 }
 
+#info{
+    margin: 10px;
+    padding: 10px;
+}
 
+#card{
+    color: #fefae0;
+    justify-content: center;
+    background-color: #008b74;
+    padding: 10px;
+    border: #fefae0 solid 3px;
+    border-radius: 20px;
+    width: 500px;
+    margin: 0 auto;
+}
 
 #main{
-    color: #fefae0;
     display: flex;
-    justify-content: start;
-    background-color: #bc6c25;
-    padding: 3%;
-    border: #ffb703 solid 3px;
-    border-radius: 20px;
-    border-bottom: #606c38  solid 10px;
-    width: 600px;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#quote{
+    color: #ffff00;
+    font-size: 20px;
+    text-align: center;
 }
