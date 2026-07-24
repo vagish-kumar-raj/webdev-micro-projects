@@ -7,7 +7,7 @@ body{
     margin: 10%;
     margin-top: 20px;
     font-size: 1.1rem;
-    background:#c1bf5d;
+    background: linear-gradient( Yellow, #f9ffcb);
     background-attachment: fixed;
     color: #000000;
     text-shadow: 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff;
