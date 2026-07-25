@@ -1,3 +1,54 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #F0F0F0;
+    color: #1A004E;
+}
+
+.wrapper{
+    padding: 20px;
+    text-align: center;
+}
+
+.circle{
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #1A004E;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 5px;
+    display: inline-block;
+    place-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: #1A004E;
+}
+
+a:hover{
+    color: #5500ff;
+}
+
+.circle:hover{
+    background-color: #5500ff;
+}
+
+.progress{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.current > a > .circle{
+    background: #5500ff;
+}
+.current > a{
+    color: #5500ff;
 }
