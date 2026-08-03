@@ -3,6 +3,7 @@ body{
     text-align: center;
     color: #ffda9e;
     text-shadow: 1px 1px 1px #5d3900, -1px -1px 5px #5d3900;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #title{
