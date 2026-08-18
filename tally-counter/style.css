@@ -25,10 +25,7 @@ body {
 }
 
 .buttons {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  margin: 10px auto;
 }
 
 .btn {
@@ -44,6 +41,7 @@ body {
   border: 2px solid #ffda9e;
   cursor: pointer;
   box-shadow: 0px 4px #3e2600;
+  margin: 10px 5px;
 }
 
 #add,
@@ -54,4 +52,9 @@ body {
 .btn:active {
   box-shadow: 0px 0px #3e2600;
   transform: translateY(5px);
+}
+
+#hist{
+  color:#3e2600;
+  text-shadow: 0px 0px 2px #ffda9e;
 }
