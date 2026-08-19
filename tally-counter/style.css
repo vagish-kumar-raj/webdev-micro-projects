@@ -32,10 +32,10 @@ body {
   font-family: inherit;
   font-size: 20px;
   font-weight: 800;
+  vertical-align: top;
   width: 75px;
   height: 75px;
-  border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #5d3900;
   color: #ffda9e;
   border: 2px solid #ffda9e;
@@ -54,7 +54,11 @@ body {
   transform: translateY(5px);
 }
 
-#hist{
-  color:#3e2600;
+#clhi {
+  font-size: 15px;
+}
+
+#hist {
+  color: #3e2600;
   text-shadow: 0px 0px 2px #ffda9e;
 }

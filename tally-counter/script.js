@@ -5,12 +5,12 @@ let X = 0;
 let S = "| ";
 
 function add() {
-  X = X + 1;
+  X += 1;
   count.innerText = X;
 }
 
 function sub() {
-  X = X - 1;
+  X -= 1;
   count.innerText = X;
 }
 
@@ -20,6 +20,12 @@ function reset() {
 }
 
 function saves() {
-    S = S + + String(X) + " | ";
-    save.innerText = S;
-  }
+  S = S + String(X) + " | ";
+  save.innerText = S;
+}
+
+function clh() {
+  S = "";
+  save.innerText = S;
+  S = "| ";
+}
