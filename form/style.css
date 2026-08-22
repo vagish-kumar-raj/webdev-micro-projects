@@ -1,122 +1,121 @@
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    background-color: #F0F0F0;
-    color: #1A004E;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  color: #1a004e;
 }
 
-h1{
-    text-align: center;
-    margin: 20px;
-    font-size: 35px;
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 35px;
 }
 
-.wrapper{
-    padding: 20px;
-    text-align: center;
+.wrapper {
+  padding: 20px;
+  text-align: center;
 }
 
-.circle{
-    width: 30px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: #1A004E;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 auto;
-    padding: 5px;
-    display: inline-block;
-    place-content: center;
+.circle {
+  width: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #1a004e;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 5px;
+  display: inline-block;
+  place-content: center;
 }
 
-a{
-    text-decoration: none;
-    color: #1A004E;
+a {
+  text-decoration: none;
+  color: #1a004e;
 }
 
-a:hover{
-    color: #2b0081;
+a:hover {
+  color: #2b0081;
 }
 
-.circle:hover{
-    transform: scale(1.2);
-    transition: 0.3s;
+.circle:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
-.progress{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+.progress {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
 }
 
-.current > a > .circle{
-    background: #5500ff;
+.current > a > .circle {
+  background: #5500ff;
 }
-.current > a{
-    color: #5500ff;
-}
-
-main{
-    background: white;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    text-align: left;
+.current > a {
+  color: #5500ff;
 }
 
-h2{
-    text-align: center;
-    margin: 20px;
-    font-size: 25px;
+main {
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: left;
 }
 
-p{
-    text-align: justify;
-    margin: 10px;
-    font-size: 15px;
+h2 {
+  text-align: center;
+  margin: 20px;
+  font-size: 25px;
 }
 
-.cta{
-    display: block;
-    width: 100px;
-    margin: 20px auto;
-    padding: 10px;
-    text-align: center;
-    background-color: #1A004E;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0px 5px 0px #000000;
+p {
+  text-align: justify;
+  margin: 10px;
+  font-size: 15px;
 }
 
-.cta:hover{
-    background-color: #5500ff;
-    color: white;
+.cta {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #1a004e;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px #000000;
 }
 
-.cta:active{
-    box-shadow: 0px 2px 0px #5500ff;
-    transform: translateY(3px);
+.cta:hover {
+  background-color: #5500ff;
+  color: white;
 }
 
-input{
-    width: 80%;
-    max-width: 400px;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 2px solid #636363;
+.cta:active {
+  box-shadow: 0px 2px 0px #5500ff;
+  transform: translateY(3px);
 }
 
-input:hover{
-    border: 2px solid #5500ff;
+input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 2px solid #636363;
 }
 
-input:focus{
-    outline: none;
-    border: 3px solid #5500ff;
+input:hover {
+  border: 2px solid #5500ff;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid #5500ff;
 }
