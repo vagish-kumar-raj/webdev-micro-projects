@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <ul>
+      <li><label><input type="checkbox" value="Apple"> Apple</label></li>
+      <li><label><input type="checkbox" value="Banana"> Banana</label></li>
+      <li><label><input type="checkbox" value="Mango"> Mango</label></li>
+      <li><label><input type="checkbox" value="Orange"> Orange</label></li>
+      <li><label><input type="checkbox" value="Grapes"> Grapes</label></li>
+    </ul>
+    
+    <button>Show Selected</button>
+
+    <script>
+      let btn = document.querySelector('button');
+
+      function clickBtn() {
+        let check = document.querySelectorAll('input:checked');
+
+        if (check.length === 0) {
+          console.log('No fruit selected');
+        } else {
+          for (let a of check) {
+            console.log(a.value);
+          }
+        }
+      }
+
+      btn.addEventListener('click', clickBtn);
+    </script>
+  </body>
+</html>
