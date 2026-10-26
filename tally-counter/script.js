@@ -1,31 +1,41 @@
-let count = document.getElementById("count");
-let save = document.getElementById("saves");
+let count = document.querySelector('#count');
+let add = document.querySelector('#addi');
+let sub = document.querySelector('#sub');
+let clear = document.querySelector('#clear');
+let save = document.querySelector('#save');
+let reset = document.querySelector('#reset');
+let hist = document.querySelector('#hist');
+let c = 0;
 
-let X = 0;
-let S = "| ";
-
-function add() {
-  X += 1;
-  count.innerText = X;
+function addition() {
+  c = c + 1;
+  count.textContent = c;
 }
 
-function sub() {
-  X -= 1;
-  count.innerText = X;
+function subtraction() {
+  c = c - 1;
+  count.textContent = c;
 }
 
-function reset() {
-  X = 0;
-  count.innerText = X;
+function clear0() {
+  c = 0;
+  count.textContent = 0;
 }
 
-function saves() {
-  S = S + String(X) + " | ";
-  save.innerText = S;
+function saveHist() {
+  if (hist.textContent === '') {
+    hist.textContent = count.textContent;
+  } else {
+    hist.textContent = hist.textContent + '    |    ' + count.textContent;
+  }
 }
 
-function clh() {
-  S = "";
-  save.innerText = S;
-  S = "| ";
+function hist0() {
+  hist.textContent = '';
 }
+
+add.addEventListener('click', addition);
+sub.addEventListener('click', subtraction);
+clear.addEventListener('click', clear0);
+save.addEventListener('click', saveHist);
+reset.addEventListener('click', hist0);

@@ -1,64 +1,47 @@
 body {
-  background-color: #ff9d00;
+  background-color: #ffffbb;
+  color: #666633;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  color: #ffda9e;
-  text-shadow:
-    1px 1px 1px #5d3900,
-    -1px -1px 5px #5d3900;
-  font-family: "Courier New", Courier, monospace;
 }
 
-#title {
-  font-size: 3rem;
-  margin: 20px auto;
-  background-color: #5d3900;
-  width: fit-content;
+button {
+  background-color: #666633;
+  color: #ffffbb;
   padding: 10px 20px;
-  border-radius: 10px;
-  border: 2px solid #ffda9e;
-  text-shadow: 0px 0px 5px #000000;
+  font-size: larger;
+  width: 100px;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid #444422;
+}
+
+button:hover {
+  border-bottom: 3px solid #444422;
+  transform: translateY(2px);
+}
+
+button:active {
+  border-bottom: 0px solid #444422;
+  transform: translateY(4px);
+}
+
+.sq {
+  height: 50px;
+  width: 50px;
+  font-weight: 900;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 
 #count {
-  font-size: 5rem;
-  margin: 0 auto;
-}
-
-.buttons {
-  margin: 10px auto;
-}
-
-.btn {
-  font-family: inherit;
-  font-size: 20px;
-  font-weight: 800;
-  vertical-align: top;
-  width: 75px;
-  height: 75px;
-  border-radius: 10px;
-  background-color: #5d3900;
-  color: #ffda9e;
-  border: 2px solid #ffda9e;
-  cursor: pointer;
-  box-shadow: 0px 4px #3e2600;
-  margin: 10px 5px;
-}
-
-#add,
-#sub {
   font-size: 60px;
-}
-
-.btn:active {
-  box-shadow: 0px 0px #3e2600;
-  transform: translateY(5px);
-}
-
-#clhi {
-  font-size: 15px;
-}
-
-#hist {
-  color: #3e2600;
-  text-shadow: 0px 0px 2px #ffda9e;
 }
