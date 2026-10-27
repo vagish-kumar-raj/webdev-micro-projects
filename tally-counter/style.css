@@ -1,7 +1,7 @@
 body {
   background-color: #ffffbb;
   color: #666633;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
 
@@ -36,6 +36,11 @@ button:active {
   font-size: 30px;
 }
 
+h1{
+  font-size: 60px;
+  text-shadow: 3px 3px 3px #999955;
+}
+
 h1,
 h2,
 h3 {
@@ -44,4 +49,10 @@ h3 {
 
 #count {
   font-size: 60px;
+}
+
+@media (max-width: 765px) {
+  h1 {
+    font-size: 40px;
+  }
 }
