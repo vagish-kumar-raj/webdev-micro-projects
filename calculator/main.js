@@ -18,130 +18,168 @@ let add = document.querySelector('#addi');
 let zero = document.querySelector('#zero');
 let deci = document.querySelector('#deci');
 let eq = document.querySelector('#eq');
-let current = document.querySelector('#current');
-let num1 = '0';
-let num2 = '0';
+let final = document.querySelector('#final');
+let OPR = document.querySelector('#OPR');
+let tempNum = '0';
+let currentNum = '0';
+let finalNum = '0';
+OPR.textContent = '';
+Input.textContent = tempNum;
+final.textContent = finalNum;
 
-Input.textContent = num1;
-
-function clickDigit(event) {
+function digits(event) {
   let digit = event.target.value;
-  if (num1 === '0') {
-    num1 = digit;
+  if (tempNum === '0') {
+    tempNum = digit;
   } else {
-    num1 = num1 + digit;
+    tempNum = tempNum + digit;
   }
-  Input.textContent = num1;
-}
-
-function clickDigit2(event) {
-  Input.textContent = num2;
-  let digit2 = event.target.value;
-  if (num2 === '0') {
-    num2 = digit2;
-  } else {
-    num2 = num2 + digit2;
-  }
-  Input.textContent = num2;
+  Input.textContent = tempNum;
 }
 
 function clickdot() {
   if (Input.textContent === '0') {
-    num1 = '0.';
-    Input.textContent = num1;
+    tempNum = '0.';
+    Input.textContent = tempNum;
   } else {
-    if (num1.includes('.') === false) {
-      num1 = num1 + '.';
-      Input.textContent = num1;
-    }
-  }
-}
-
-function clickdot2() {
-  if (Input.textContent === '0') {
-    num2 = '0.';
-    Input.textContent = num2;
-  } else {
-    if (num2.includes('.') === false) {
-      num2 = num2 + '.';
-      Input.textContent = num2;
+    if (tempNum.includes('.') === false) {
+      tempNum = tempNum + '.';
+      Input.textContent = tempNum;
     }
   }
 }
 
 function clickC() {
-  num1 = '0';
-  Input.textContent = num1;
+  tempNum = '0';
+  Input.textContent = tempNum;
 }
 
 function clickAC() {
-  num1 = '0';
-  num2 = '0';
-  Input.textContent = num1;
+  tempNum = '0';
+  finalNum = '0';
+  currentNum = '0';
+  final.textContent = finalNum;
+  Input.textContent = tempNum;
+  OPR.textContent = '';
 }
 
-AC.addEventListener('click', clickAC);
-deci.addEventListener('click', clickdot);
-C.addEventListener('click', clickC);
-
-let op = '';
 function addition() {
-  op = 'add';
-  Input.textContent = num2;
-}
-function subtract() {
-  op = 'sub';
-  Input.textContent = num2;
-}
-function multiply() {
-  op = 'multi';
-  Input.textContent = num2;
-}
-function divide() {
-  op = 'div';
-  Input.textContent = num2;
-}
-function percent() {
-  op = 'perc';
-  Input.textContent = num2;
+  currentNum = +currentNum + +tempNum;
+  finalNum = currentNum;
+  tempNum = '0';
+  Input.textContent = tempNum;
+  final.textContent = finalNum;
+  OPR.textContent = '+';
 }
 
-add.addEventListener('click', addition);
-perc.addEventListener('click', subtract);
-multi.addEventListener('click', multiply);
-sub.addEventListener('click', divide);
-div.addEventListener('click', percent);
-
-if (op === '') {
-  one.addEventListener('click', clickDigit);
-  two.addEventListener('click', clickDigit);
-  three.addEventListener('click', clickDigit);
-  four.addEventListener('click', clickDigit);
-  five.addEventListener('click', clickDigit);
-  six.addEventListener('click', clickDigit);
-  seven.addEventListener('click', clickDigit);
-  eight.addEventListener('click', clickDigit);
-  nine.addEventListener('click', clickDigit);
-  zero.addEventListener('click', clickDigit);
-} else {
-  one.addEventListener('click', clickDigit2);
-  two.addEventListener('click', clickDigit2);
-  three.addEventListener('click', clickDigit2);
-  four.addEventListener('click', clickDigit2);
-  five.addEventListener('click', clickDigit2);
-  six.addEventListener('click', clickDigit2);
-  seven.addEventListener('click', clickDigit2);
-  eight.addEventListener('click', clickDigit2);
-  nine.addEventListener('click', clickDigit2);
-  zero.addEventListener('click', clickDigit2);
+function subtraction() {
+  currentNum = +currentNum - +tempNum;
+  finalNum = currentNum;
+  tempNum = '0';
+  Input.textContent = tempNum;
+  final.textContent = finalNum;
+  OPR.textContent = '-';
 }
-let final = num1;
+
+function multiplication() {
+  if (currentNum === '0') {
+    currentNum = tempNum;
+  } else {
+    currentNum = +currentNum * +tempNum;
+  }
+  finalNum = currentNum;
+  tempNum = '0';
+  Input.textContent = tempNum;
+  final.textContent = finalNum;
+  OPR.textContent = '×';
+}
+
+function division() {
+  if (currentNum === '0') {
+    currentNum = tempNum;
+    currentNum = +currentNum / +tempNum;
+  } else {
+    currentNum = +currentNum / +tempNum;
+  }
+  finalNum = currentNum;
+  tempNum = '0';
+  Input.textContent = tempNum;
+  final.textContent = finalNum;
+  OPR.textContent = '÷';
+}
+
+function percentage() {
+  if (currentNum === '0') {
+    currentNum = tempNum;
+    currentNum = (+currentNum * +tempNum) / 100;
+  } else {
+    currentNum = (+currentNum * +tempNum) / 100;
+  }
+
+  finalNum = currentNum;
+  tempNum = '0';
+  Input.textContent = tempNum;
+  final.textContent = finalNum;
+}
+
+let OP = '';
+
+function addOP() {
+  OP = 'A';
+  addition();
+}
+
+function subOP() {
+  OP = 'S';
+  subtraction();
+}
+
+function multiOP() {
+  OP = 'M';
+  multiplication();
+}
+
+function divOP() {
+  OP = 'D';
+  division();
+}
+
+function perOP() {
+  OP = 'P';
+  percentage();
+}
+
 function equal() {
-  if (op == 'add') {
-  } else if (op == 'sub') {
-  } else if (op == 'multi') {
-  } else if (op == 'div') {
-  } else if (op == 'perc') {
+  if (OP === 'A') {
+    addition();
+  } else if (OP === 'S') {
+    subtraction();
+  } else if (OP === 'M') {
+    multiplication();
+  } else if (OP === 'D') {
+    division;
+  } else if (OP === 'P') {
+    percentage;
+  } else {
   }
 }
-current.textContent = final;
+
+one.addEventListener('click', digits);
+two.addEventListener('click', digits);
+three.addEventListener('click', digits);
+four.addEventListener('click', digits);
+five.addEventListener('click', digits);
+six.addEventListener('click', digits);
+seven.addEventListener('click', digits);
+eight.addEventListener('click', digits);
+nine.addEventListener('click', digits);
+zero.addEventListener('click', digits);
+deci.addEventListener('click', clickdot);
+AC.addEventListener('click', clickAC);
+C.addEventListener('click', clickC);
+add.addEventListener('click', addOP);
+sub.addEventListener('click', subOP);
+multi.addEventListener('click', multiOP);
+div.addEventListener('click', divOP);
+perc.addEventListener('click', perOP);
+eq.addEventListener('click', equal);
