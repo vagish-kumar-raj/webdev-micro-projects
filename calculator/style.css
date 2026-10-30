@@ -44,6 +44,20 @@ main {
   text-shadow: 1px 1px 1px #555555;
 }
 
+#current {
+  margin: 10px 18px 0px auto;
+  width: 128px;
+  height: 25px;
+  text-align: end;
+  padding: 5px;
+  font-size: 18px;
+  background-color: #88aa88;
+  border-radius: 5px;
+  font-family: 'Digital';
+  color: #111111;
+  text-shadow: 1px 1px 1px #555555;
+}
+
 button {
   width: 60px;
   height: 60px;
