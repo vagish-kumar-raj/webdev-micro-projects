@@ -1,0 +1,23 @@
+let Input = document.querySelector('#inputnum');
+let AC = document.querySelector('#AC');
+let C = document.querySelector('#C');
+let perc = document.querySelector('#perc');
+let div = document.querySelector('#div');
+let seven = document.querySelector('#seven');
+let eight = document.querySelector('#eight');
+let nine = document.querySelector('#nine');
+let multi = document.querySelector('#multi');
+let four = document.querySelector('#four');
+let five = document.querySelector('#five');
+let six = document.querySelector('#six');
+let sub = document.querySelector('#sub');
+let three = document.querySelector('#three');
+let two = document.querySelector('#two');
+let one = document.querySelector('#one');
+let add = document.querySelector('#addi');
+let zero = document.querySelector('#zero');
+let deci = document.querySelector('#deci');
+let eq = document.querySelector('#eq');
+
+let current = 0;
+Input.textContent = current;
