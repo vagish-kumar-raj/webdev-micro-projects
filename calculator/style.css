@@ -91,6 +91,11 @@ button {
   color: #ddccff;
 }
 
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 2px 1px#111111;
+}
+
 #eq {
   width: 130px;
   font-size: 35px;

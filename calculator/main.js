@@ -73,7 +73,11 @@ function addition() {
 }
 
 function subtraction() {
-  currentNum = +currentNum - +tempNum;
+  if (currentNum === '0') {
+    currentNum = +tempNum; 
+  } else {
+    currentNum = +currentNum - +tempNum;
+  }
   finalNum = currentNum;
   tempNum = '0';
   Input.textContent = tempNum;
@@ -97,7 +101,6 @@ function multiplication() {
 function division() {
   if (currentNum === '0') {
     currentNum = tempNum;
-    currentNum = +currentNum / +tempNum;
   } else {
     currentNum = +currentNum / +tempNum;
   }
@@ -111,7 +114,6 @@ function division() {
 function percentage() {
   if (currentNum === '0') {
     currentNum = tempNum;
-    currentNum = (+currentNum * +tempNum) / 100;
   } else {
     currentNum = (+currentNum * +tempNum) / 100;
   }
@@ -120,6 +122,7 @@ function percentage() {
   tempNum = '0';
   Input.textContent = tempNum;
   final.textContent = finalNum;
+  OPR.textContent = '%';
 }
 
 let OP = '';
@@ -157,9 +160,9 @@ function equal() {
   } else if (OP === 'M') {
     multiplication();
   } else if (OP === 'D') {
-    division;
+    division();
   } else if (OP === 'P') {
-    percentage;
+    percentage();
   } else {
   }
 }
